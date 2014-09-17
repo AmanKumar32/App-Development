@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spring"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="192dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="Simple Calculator "
+        android:textColor="@android:color/black"
+        android:textSelectHandleRight="@android:anim/accelerate_decelerate_interpolator"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="228dp"
+        android:layout_height="126dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etFirstNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Enter First Number"
+            android:inputType="numberDecimal"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+        <EditText
+            android:id="@+id/etSecondNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Enter Second Number"
+            android:inputType="numberDecimal"
+            android:textColorHint="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="234dp"
+        android:layout_height="78dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnadd"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="56dp"
+            android:layout_height="60dp"
+            android:background="@drawable/add"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="calculator"
+            android:shadowColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnsubtract"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="47dp"
+            android:layout_height="63dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/subtract"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="calculator" />
+
+        <Button
+            android:id="@+id/btnmultiply"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="52dp"
+            android:layout_height="62dp"
+            android:background="@drawable/multiply"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="calculator" />
+
+        <Button
+            android:id="@+id/btnremainder"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="59dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="21dp"
+            android:layout_weight="0.32"
+            android:background="@drawable/percentage"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="calculator" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ResultDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="30dp"
+        android:text="Result Will Be Displayed Here !!!!" />
+
+</LinearLayout>

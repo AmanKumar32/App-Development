@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aman.sortingapp.SortingActivity"
+    android:background="@drawable/banding" >
+
+    <Button
+        android:id="@+id/btnBubbleSort"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSelectionSort"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnSelectionSort"
+        android:layout_marginBottom="40dp"
+        android:text="Bubble Sort" 
+        android:onClick="Compute"/>
+
+    <TextView
+        android:id="@+id/tvSelectionSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSelectionSort"
+        android:layout_alignBottom="@+id/btnSelectionSort"
+        android:layout_alignLeft="@+id/tvInserstionSort"
+        android:layout_alignRight="@+id/tvInserstionSort"
+        android:hint="Time Taken For Sorting" />
+
+    <TextView
+        android:id="@+id/tvBubbleSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnBubbleSort"
+        android:layout_alignBottom="@+id/btnBubbleSort"
+        android:layout_alignLeft="@+id/tvSelectionSort"
+        android:hint="Time Taken For Sorting" />
+
+    <TextView
+        android:id="@+id/tvResultDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnInsertionSort"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:hint="Result Will Be Displayed Here!!!" />
+
+    <Button
+        android:id="@+id/btnInsertionSort"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSelectionSort"
+        android:layout_alignTop="@+id/tvInserstionSort"
+        android:text="Insertion Sort"
+        android:onClick="Compute" />
+
+    <TextView
+        android:id="@+id/tvInserstionSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSelectionSort"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/btnSelectionSort"
+        android:hint="Time Taken For Sorting" />
+
+    <Button
+        android:id="@+id/btnSelectionSort"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBubbleSort"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="36dp"
+        android:text="Selection Sort"
+        android:onClick="Compute" />
+
+    <Button
+        android:id="@+id/btnGenRndArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvResultDisplay"
+        android:layout_centerHorizontal="true"
+        android:text="Generate Random Array" 
+        android:onClick="Compute"/>
+
+    <EditText
+        android:id="@+id/etEnteredNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGenRndArray"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Enter The Size of Array?"
+        android:inputType="number"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tvBubbleSort"
+        android:text="Clear" 
+        android:onClick="Compute"/>
+    
+</RelativeLayout>
