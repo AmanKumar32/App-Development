@@ -86,6 +86,7 @@ public class MainActivtiy extends Activity {
 				.setSmallIcon(R.drawable.ic_launcher);
 
 		Notification notification = builder.getNotification();
+		notification.flags |= Notification.FLAG_AUTO_CANCEL;
 		// led
 
 		notification.ledARGB = 0xFFff0000;

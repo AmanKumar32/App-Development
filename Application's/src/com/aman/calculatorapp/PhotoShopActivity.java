@@ -83,8 +83,7 @@ public class PhotoShopActivity extends Activity {
 					g = g - 50;
 					b = b - 50;
 					alpha = alpha - 50;
-					bmpdark.setPixel(i, j,
-							Color.argb(Color.alpha(p), r, g, b));
+					bmpdark.setPixel(i, j, Color.argb(Color.alpha(p), r, g, b));
 
 				}
 			}
@@ -138,5 +137,11 @@ public class PhotoShopActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		finish();
 	}
 }
