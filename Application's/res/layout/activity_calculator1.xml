@@ -42,55 +42,63 @@
             android:textColorHint="@android:color/holo_green_dark" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="234dp"
-        android:layout_height="78dp"
-        android:orientation="horizontal" >
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="131dp" >
 
-        <Button
-            android:id="@+id/btnadd"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="56dp"
-            android:layout_height="60dp"
-            android:background="@drawable/add"
-            android:minHeight="10dp"
-            android:minWidth="10dp"
-            android:onClick="calculator"
-            android:shadowColor="@android:color/darker_gray" />
-
-        <Button
-            android:id="@+id/btnsubtract"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="47dp"
-            android:layout_height="63dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/subtract"
-            android:minHeight="10dp"
-            android:minWidth="10dp"
-            android:onClick="calculator" />
-
-        <Button
-            android:id="@+id/btnmultiply"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="52dp"
-            android:layout_height="62dp"
-            android:background="@drawable/multiply"
-            android:minHeight="10dp"
-            android:minWidth="10dp"
-            android:onClick="calculator" />
-
-        <Button
+        <ImageButton
             android:id="@+id/btnremainder"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="59dp"
-            android:layout_height="64dp"
-            android:layout_marginLeft="21dp"
-            android:layout_weight="0.32"
-            android:background="@drawable/percentage"
-            android:minHeight="10dp"
-            android:minWidth="10dp"
-            android:onClick="calculator" />
-    </LinearLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btnsubtract"
+            android:layout_weight="0.59"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:onClick="calculator"
+            android:src="@drawable/percentage" />
+
+        <ImageButton
+            android:id="@+id/btnmultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/btnremainder"
+            android:layout_weight="0.74"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:onClick="calculator"
+            android:src="@drawable/multiply" />
+
+        <ImageButton
+            android:id="@+id/btnsubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/btnadd"
+            android:layout_weight="0.53"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:onClick="calculator"
+            android:src="@drawable/subtract" />
+
+        <ImageButton
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="0.27"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:onClick="calculator"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/ResultDisplay"
