@@ -43,12 +43,12 @@ public final class R {
         public static final int btnGrayScale=0x7f090017;
         public static final int btnInsertionSort=0x7f09000e;
         public static final int btnSelectionSort=0x7f090009;
-        public static final int btnadd=0x7f090003;
+        public static final int btnadd=0x7f090006;
         public static final int btnbright=0x7f090018;
         public static final int btncalculator=0x7f090013;
         public static final int btndark=0x7f090015;
-        public static final int btnmultiply=0x7f090006;
-        public static final int btnremainder=0x7f090005;
+        public static final int btnmultiply=0x7f090005;
+        public static final int btnremainder=0x7f090003;
         public static final int btnsorting=0x7f090012;
         public static final int btnsubtract=0x7f090004;
         public static final int etEnteredNumber=0x7f090010;
